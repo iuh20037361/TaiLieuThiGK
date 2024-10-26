@@ -117,3 +117,23 @@ CREATE TABLE THUOC(
 	MALOAI INT,
 	FOREIGN KEY (MALOAI) REFERENCES LOAITHUOC(MALOAI)
 );
+
+
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LeThienNghia_20037361</title>
+</head>
+<body>
+	<jsp:forward page="thuoc"></jsp:forward>
+	
+	<a href="${pageContext.request.contextPath}/views/dienthoai">Danh sách sản phẩm</a> |
+	<a href="${pageContext.request.contextPath}/views/ncc">Danh sách Nhà cung cấp</a> |
+	<a href="${pageContext.request.contextPath}/views/dienthoai">Thêm sản phẩm</a>  
+	
+</body>
+</html>
